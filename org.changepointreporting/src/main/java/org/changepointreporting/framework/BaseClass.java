@@ -28,11 +28,10 @@ public class BaseClass {
 
 	public void openBrowser(String browserName) {
 		System.out.println("sush testing");
-//		if (browserName.equals("Chrome"))
-//			driver = new ChromeDriver();
-//		else if (browserName.equals("IE"))
-//			driver = new InternetExplorerDriver();
-//		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+
+			driver = new ChromeDriver();
+
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 	
 	public void navigate(String urlKey) {
